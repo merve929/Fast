@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>sınav belgesi</title>
+<meta charset="UTF-8">
+<meta name="description" content="sınav başvuru sitesi">
+<meta name="keyword" content="sınav,giriş,kayıt,öğrenci">
+<meta name="author" content="merve güneş">
+<meta name=" viewport" content="width=device-width, inital-scalew1.0">
+<style>
+body{background-color:#C5CAE9; margin-left:230; margin-right:230;}
+h1{color:#1A237E; text-align:center;}
+hr{border-color:red; border:5;}
+#logo{ width:120; height:70; align:center;}
+#önbilgi{color:#1A237E;font-weight:bold;}
+#sonbilgi{color:#1A237E;font-weight:bold;}
+#giriş{font-weight:bold;}
+#oturum1{color:red; font-weight:bold; text-decoration:underline;}
+#oturum2{color:red; font-weight:bold; text-decoration:underline;}
+#oturum3{color:red; font-weight:bold; text-decoration:underline;}
+#gönder{background-color:green; color:white;}
+#sıfırla{background-color:red; color:white; }
+table{border-color:red; border-style:dotted;}
+#buton{text-align:center;}
+</style>
+</head>
+<body>
+<form>
+<h1>GİRİŞ BELGESİ</h1>
+<img src="asset/img/balık.png" id="logo" /><br><br>
+<hr>
+<div id="önbilgi">
+PROFİL RESMİ:<input type="file"/><br><br>
+GİRİŞ NUMARSI:<input type="text" name="numara" placeholder="numaranızı girin"/><br><br>
+GİRİŞ ŞİFRESİ:<input type="text" name="şifre"placeholder="şifrenizi girin"/><br><br>
+GİRİŞ TARİHİ:<input type="date" name="tarih" /><br><br>
+</div>
+<hr><br>
+<div id="sonbilgi">
+KULLANICI ADI:<input type="text" name="isim" placeholder="adınızı girin" /><br><br>
+KULLANICI SOYADI:<input type="text" name="soyad" placeholder="soyadınızı girin"/><br><br>
+TC KİMLİK NUMARASI:<input type="text" name="tc" placeholder="kimlik numaranızı girin" />
+<input list="datalistesi"/><br>
+<datalist id="datalistesi"><option value="YENİ KİMLİK">
+                           <option value="ESKİ KİMLİK">
+                           <option value="YABANCI UYRUK">
+</datalist><br>
+<select><optgroup label="GÜNLER">
+        <option>PAZARTESİ</option>
+        <option>SALI</option>
+		<option>ÇARŞAMBA</option>
+		<option>PERŞEMBE</option>
+		<option>CUMA</option>
+</optgroup></select>
+</div>
+</form>
+<table border="3">
+
+<tr><td colspan="3"><p id="giriş">Yükseköğretim Kurumları Sınavı (YKS) bu yıl 18-19 Haziran 2022 tarihlerinde gerçekleştirilecek. 
+Üniversite sınavları 3 kademeli olarak gerçekleşiyor.</p>
+<p id="oturum1">YKS 1. Oturum Temel Yeterlilik Testi (TYT)</p>
+<ul><li>SINAV TARİHİ: 18.06.2022 18 Haziran 2022 (Cumartesi) saat: 10.15,</li>
+    <li>BAŞVURU TARİHİ: 11.02.2022- 07.03.2022</li>
+    <li>SONUÇ AÇIKLAMA TARİHİ: 20.07.2022</li>
+    <li>SINAV SÜRESİ: 165 dakika</li>
+</ul>
+
+<p id="oturum2">YKS 2. Oturum Alan Yeterlilik Testleri (AYT)</p>
+<ul><li>SINAV TARİHİ: 19.06.2022 19 Haziran 2022 (Pazar) saat: 10.15,</li>
+    <li>BAŞVURU TARİHİ: 11.02.2022- 07.03.2022</li>
+    <li>SONUÇ AÇIKLAMA TARİHİ: 20.07.2022</li>
+    <li>SINAV SÜRESİ: 180 dakika</li>
+</ul>
+
+<p id="oturum3">YKS 3. Oturum Yabancı Dil Testi (YDT)</p>
+<ul><li>SINAV TARİHİ: 19.06.2022 19 Haziran 2022 (Pazar) saat: 15.45</li>
+    <li>BAŞVURU TARİHİ: 11.02.2022- 07.03.2022</li>
+    <li>SONUÇ AÇIKLAMA TARİHİ: 20.07.2022</li>
+    <li>SINAV SÜRESİ: 120 dakika</li>
+</ul></td></tr>
+<tr><td><input type="checkbox">Gizlilik<br>
+        <input type="checkbox">Sözleşmeler<br>
+		<input type="checkbox">Haklar
+</td>
+<td><input type="radio" name="k" checked="on">Kabul ediyorum<br>
+    <input type="radio" name="k">Kabul etmiyorum
+</td></tr>
+</table>
+<div id="buton">
+<input type="submit" id="gönder" value="GÖNDER">
+<input type="reset" id="sıfırla" value="SIFIRLA">
+</div>
+</body>
+</html>
